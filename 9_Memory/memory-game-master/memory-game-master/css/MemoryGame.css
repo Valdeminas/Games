@@ -7,6 +7,7 @@ body {
   padding:0;
   width:100%;
   height:100%;
+    background-color: #0061a8;
 }
 
 .modal {
@@ -39,9 +40,9 @@ body {
 }
 
 #memory--app-container {
-  background-color: #0061a8;
   width:100%;
   height:90%;
+  margin: auto;
 }
 
 .memory--menu-bar {
@@ -92,8 +93,9 @@ body {
   float: right;
 }
 
-#memory--end-game-modal .wrapper {
+#memory--end-game-modal{
   background-color: rgba(0, 0, 0, .86);
+
   text-align: center;
   color:#ccc;
   padding:8px 0;
@@ -102,6 +104,36 @@ body {
 #memory--end-game-modal h3 {
   margin:0;
   margin-bottom: 4px;
+}
+
+#end-game-image{
+  width: 70%;
+  height:100%;
+  object-fit: contain;
+  padding-right: 10%;
+}
+
+#end-game-bottom{
+  position: fixed;
+  bottom: 0;
+  height: 20%;
+  width: 100%;
+}
+
+#end-game-top{
+  position: fixed;
+  bottom: 0;
+  top:0;
+  left:0;
+  right:0;
+  /*height: 80%;
+  width: 100%;*/
+}
+
+.img-button{
+  width: 45%;
+  height: 75%;
+  object-fit: contain;
 }
 
 #memory--settings-modal {
@@ -137,8 +169,14 @@ body {
 }
 
 #memory--settings-reset {
-  border-radius:5px;
-  border:2px solid #ccc;
+  cursor: pointer;
+}
+
+#retry {
+  cursor: pointer;
+}
+
+#end {
   cursor: pointer;
 }
 
@@ -220,9 +258,8 @@ body {
   -ms-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  background-color: #01426C;
   border-radius: 5%;
-  background-image: url(../images/Back.jpg);
+  background-image: url(../images/Back.png);
   background-position:50% 50%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -236,34 +273,33 @@ body {
   -ms-transform: rotateY(-180deg);
   -o-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
-  background-color: #fff;
   border-radius: 5%;
   background-position:50% 50%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .back.card-1 {
-  background-image: url(../images/cards/1.jpg);
+  background-image: url(../images/cards/1.png);
 }
 .back.card-2 {
-  background-image: url(../images/cards/2.jpg);
+  background-image: url(../images/cards/2.png);
 }
 .back.card-3 {
-  background-image: url(../images/cards/3.jpg);
+  background-image: url(../images/cards/3.png);
 }
 .back.card-4 {
-  background-image: url(../images/cards/4.jpg);
+  background-image: url(../images/cards/4.png);
 }
 .back.card-5 {
-  background-image: url(../images/cards/5.jpg);
+  background-image: url(../images/cards/5.png);
 }
 .back.card-6 {
-  background-image: url(../images/cards/6.jpg);
+  background-image: url(../images/cards/6.png);
 }
 .back.card-7 {
-  background-image: url(../images/cards/7.jpg);
+  background-image: url(../images/cards/7.png);
 }
 .back.card-8 {
-  background-image: url(../images/cards/8.jpg);
+  background-image: url(../images/cards/8.png);
 }

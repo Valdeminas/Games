@@ -19,9 +19,9 @@ if(s>condition){
   var score = 0
   var message = "Message";
 
-  document.getElementById('memory--end-game-message').textContent = message;
-  document.getElementById('memory--end-game-score').textContent =
-      'Score: ' + score + ' / 100';
+  // document.getElementById('memory--end-game-message').textContent = message;
+  // document.getElementById('memory--end-game-score').textContent =
+  //     'Score: ' + score + ' / 100';
 
   document.getElementById("memory--end-game-modal").classList.toggle('show');
 }

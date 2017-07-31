@@ -9,18 +9,18 @@
     if (cards) {
       document.getElementById('memory--settings-modal').classList.remove('show');
       document.getElementById('memory--end-game-modal').classList.remove('show');
-      document.getElementById('memory--end-game-message').innerText = "";
-      document.getElementById('memory--end-game-score').innerText = "";
+      // document.getElementById('memory--end-game-message').innerText = "";
+      // document.getElementById('memory--end-game-score').innerText = "";
       buildLayout($.cards, $.settings.rows, $.settings.columns);
     }
 
-    startTimer(10)
+    startTimer(1)
 
   };
   start.addEventListener('click', handleSettingsSubmission);
 
   // Handle restart
-    var reset = document.getElementById('memory--end-game-modal');
+    var reset = document.getElementById('retry');
     var handleSettingsSubmission = function (event) {
       event.preventDefault();
       var cards = $.initialize(4, 4);
@@ -28,8 +28,8 @@
       if (cards) {
         document.getElementById('memory--settings-modal').classList.remove('show');
         document.getElementById('memory--end-game-modal').classList.remove('show');
-        document.getElementById('memory--end-game-message').innerText = "";
-        document.getElementById('memory--end-game-score').innerText = "";
+        // document.getElementById('memory--end-game-message').innerText = "";
+        // document.getElementById('memory--end-game-score').innerText = "";
         buildLayout($.cards, $.settings.rows, $.settings.columns);
       }
 
@@ -61,9 +61,9 @@
       var score = parseInt((($.attempts - $.mistakes) / $.attempts) * 100, 10);
       var message = getEndGameMessage(score);
 
-      document.getElementById('memory--end-game-message').textContent = message;
-      document.getElementById('memory--end-game-score').textContent =
-          'Score: ' + score + ' / 100';
+      // document.getElementById('memory--end-game-message').textContent = message;
+      // document.getElementById('memory--end-game-score').textContent =
+      //     'Score: ' + score + ' / 100';
 
       document.getElementById("memory--end-game-modal").classList.toggle('show');
     }
@@ -99,10 +99,10 @@
     var index = 0;
 
     var cardMaxWidth = document.getElementById('memory--app-container').offsetWidth / columns;
-    var cardHeightForMaxWidth = cardMaxWidth * (3 / 4);
+    var cardHeightForMaxWidth = cardMaxWidth * (3/4);
 
     var cardMaxHeight = document.getElementById('memory--app-container').offsetHeight / rows;
-    var cardWidthForMaxHeight = cardMaxHeight * (4 / 3);
+    var cardWidthForMaxHeight = cardMaxHeight * (3/4);
 
     // Clean up. Remove all child nodes and card clicking event listeners.
     while (memoryCards.firstChild) {
@@ -176,8 +176,8 @@
 
   if (cards) {
     document.getElementById('memory--end-game-modal').classList.remove('show');
-    document.getElementById('memory--end-game-message').innerText = "";
-    document.getElementById('memory--end-game-score').innerText = "";
+    // document.getElementById('memory--end-game-message').innerText = "";
+    // document.getElementById('memory--end-game-score').innerText = "";
     buildLayout($.cards, $.settings.rows, $.settings.columns);
   }
 

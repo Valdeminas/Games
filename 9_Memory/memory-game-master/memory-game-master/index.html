@@ -12,22 +12,32 @@
   <body>
     <section class="memory--menu-bar">
       <div class="inner">
-        <div id="output" class="center"></div>
+        <div id="output" class="center">00:00</div>
       </div>
     </section>
     <section id="memory--settings-modal" class="valign-table modal show">
       <div class="valign-cell">
         <div id="memory--settings-reset">
-            <div id="text">Overlay Text</div>
+            <div id="text">
+              <p>
+                Try to find two identical cards with correct information in documents. You have limited time.
+              </p>
+              <br>
+            <p>
+            Click anywhere to start
+          </p>
+          </div>
         </div>
       </div>
     </section>
     <section id="memory--end-game-modal" class="valign-table modal">
-      <div class="valign-cell">
-        <div class="wrapper">
-          <h2 id="memory--end-game-message"></h2>
-          <h3 id="memory--end-game-score"></h3>
-        </div>
+      <div id="end-game-top">
+      <img id="end-game-image" src="images/EndGame.png">
+    </img>
+  </div>
+      <div id="end-game-bottom">
+        <img  id="retry" class="img-button" src="images/Retry.png">
+        <img  id="end" class="img-button" src="images/End.png">
       </div>
     </section>
     <section id="memory--app-container">
