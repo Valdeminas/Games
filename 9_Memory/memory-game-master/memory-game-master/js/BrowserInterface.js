@@ -14,7 +14,7 @@
       buildLayout($.cards, $.settings.rows, $.settings.columns);
     }
 
-    startTimer(1)
+    startTimer(10)
 
   };
   start.addEventListener('click', handleSettingsSubmission);
