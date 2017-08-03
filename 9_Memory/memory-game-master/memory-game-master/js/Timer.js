@@ -18,6 +18,7 @@ if(s>condition){
   clearInterval(intervalID);
   var score = 0
   var message = "Message";
+  document.getElementById('output').innerHTML = "00:00";
 
   // document.getElementById('memory--end-game-message').textContent = message;
   // document.getElementById('memory--end-game-score').textContent =
