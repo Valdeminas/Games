@@ -98,7 +98,8 @@ function create_game() {   
     var i;       
     var apple;       
     var dateNow = Date.now();       
-    c.width = c.width;       
+    c.width = window.innerWidth;  
+    c.height = window.innerHeight;       
     for (i = 0; i < apples.length; i++) {           
       apple = apples[i];           
       if (dateNow > apple.delay) {               
