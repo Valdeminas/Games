@@ -21,11 +21,9 @@ function create_game() {   
    var basket_img = new Image();   
    var c, ctx;
   var apples = [];
-   c = document.getElementById("c");  
-  var bounding_box = c.getBoundingClientRect();
     
   var basket = {       
-    x: bounding_box.height,       
+    x: 0,       
     y: 0,       
     score: 0   
   };
@@ -40,6 +38,9 @@ function create_game() {   
   ctx = c.getContext("2d");       
   ctx.fillStyle = "#000";       
   ctx.fillRect(0, 0, 500, 500);
+    
+    var bounding_box = c.getBoundingClientRect();
+    basket.y=bounding_box.height-basket_img.height;
 
   c.addEventListener("mousemove", function (e) {           
     var bounding_box = c.getBoundingClientRect();   
