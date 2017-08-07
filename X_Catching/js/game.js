@@ -41,6 +41,7 @@ function create_game() {   
     
     var bounding_box = c.getBoundingClientRect();
     basket.y=bounding_box.height-basket_img.height;
+    basket.x=bounding_box.width/2-basket_img.width/2;
 
   c.addEventListener("mousemove", function (e) {           
     var bounding_box = c.getBoundingClientRect();   
