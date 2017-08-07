@@ -20,10 +20,11 @@ function create_game() {   
    var apple_h = 50;   
    var basket_img = new Image();   
    var c, ctx;
-  var apples = []; 
+  var apples = [];
+  var bounding_box = c.getBoundingClientRect();
     
   var basket = {       
-    x: 100,       
+    x: bounding_box.height,       
     y: 0,       
     score: 0   
   };
