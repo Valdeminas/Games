@@ -30,7 +30,7 @@ function create_game() {   
 
   function init() {       
     apple_img.src = "images/temp.png";       
-    basket_img.src = "images/Person.png";
+    basket_img.src = "images/Person.PNG";
   level = 1;       
   total_apples = 0;       
   apples = [];
