@@ -21,6 +21,7 @@ function create_game() {   
    var basket_img = new Image();   
    var c, ctx;
   var apples = [];
+   c = document.getElementById("c");  
   var bounding_box = c.getBoundingClientRect();
     
   var basket = {       
