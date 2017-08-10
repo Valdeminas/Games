@@ -14,7 +14,7 @@
       buildLayout($.cards, $.settings.rows, $.settings.columns);
     }
 
-    startTimer(10)
+    startTimer(30)
 
   };
   start.addEventListener('click', handleSettingsSubmission);
@@ -33,7 +33,7 @@
         buildLayout($.cards, $.settings.rows, $.settings.columns);
       }
 
-      startTimer(60)
+      startTimer(120)
 
     };
     reset.addEventListener('click', handleSettingsSubmission);
