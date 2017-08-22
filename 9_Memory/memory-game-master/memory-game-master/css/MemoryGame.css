@@ -109,7 +109,6 @@ body {
 #end-game-image{
   width: auto;
   height:100%;
-  padding-right: 10%;
 }
 
 #end-game-bottom{
@@ -145,6 +144,7 @@ body {
   width:50%;
   height:100%;
   display:inline-block;
+  float:right;
 }
 
 .img-button{
