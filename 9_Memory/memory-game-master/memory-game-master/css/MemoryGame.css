@@ -116,24 +116,41 @@ body {
 #end-game-bottom{
   position: fixed;
   bottom: 0;
-  height: 20%;
+  height: 30%;
   width: 100%;
 }
 
 #end-game-top{
   position: fixed;
   bottom: 0;
-  top:0;
+  top:10%;
   left:0;
   right:0;
-  /*height: 80%;
-  width: 100%;*/
+  height: 60%;
+  width: 100%;
+}
+
+#end-game-bottom-inner{
+  margin:auto;
+  width:50%;
+  height:100%;
+}
+
+#end-game-bottom-left{
+  width:50%;
+  height:100%;
+  display:inline-block;
+}
+
+#end-game-bottom-right{  
+  width:50%;  
+  height:100%;  
+  display:inline-block;
 }
 
 .img-button{
-  width: 45%;
-  height: 75%;
-  object-fit: contain;
+  width: 50%;
+  height: auto;
 }
 
 #memory--settings-modal {
