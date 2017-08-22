@@ -107,9 +107,8 @@ body {
 }
 
 #end-game-image{
-  width: 70%;
+  width: auto;
   height:100%;
-  object-fit: contain;
   padding-right: 10%;
 }
 
