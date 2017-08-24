@@ -60,12 +60,14 @@
     else if (status.code == 4) {
       var score = parseInt((($.attempts - $.mistakes) / $.attempts) * 100, 10);
       var message = getEndGameMessage(score);
+      clearInterval(intervalID);document.getElementById('output').innerHTML="Congratulations!\nAllthedocuments look correct. You can move forward :)";
+      
 
       // document.getElementById('memory--end-game-message').textContent = message;
       // document.getElementById('memory--end-game-score').textContent =
       //     'Score: ' + score + ' / 100';
 
-      document.getElementById("memory--end-game-modal").classList.toggle('show');
+      //document.getElementById("memory--end-game-modal").classList.toggle('show');
     }
 
   };
