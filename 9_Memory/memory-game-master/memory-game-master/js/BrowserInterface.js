@@ -60,7 +60,7 @@
     else if (status.code == 4) {
       var score = parseInt((($.attempts - $.mistakes) / $.attempts) * 100, 10);
       var message = getEndGameMessage(score);
-      clearInterval(intervalID);document.getElementById('output').innerHTML="Congratulations!\nAllthedocuments look correct. You can move forward :)";
+      clearInterval(intervalID);document.getElementById('output').innerHTML="Congratulations!<br>All the documents look correct, You can move forward :)";
       
 
       // document.getElementById('memory--end-game-message').textContent = message;
