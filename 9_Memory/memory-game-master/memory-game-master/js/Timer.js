@@ -12,7 +12,7 @@ intervalID=setInterval(startTime, 1000);
 
 function startTime() {
 document.getElementById('output').innerHTML =
-checkTime(m) + ":" + checkTime(s);
+checkTime(floor(s/60)) + ":" + checkTime(s%60);
 s=s+1;
 if(s>condition){
   clearInterval(intervalID);
