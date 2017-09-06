@@ -1,5 +1,16 @@
 (function($) {
 
+  //Handle exit
+  var exit = document.getElementById('end');
+  
+    var handleEndSubmission = function (event) {
+      event.preventDefault();
+      window.location.href="../../../Main/index.html";
+    };
+    exit.addEventListener('click', handleEndSubmission);
+    exit = document.getElementById('end2');
+    exit.addEventListener('click', handleEndSubmission);
+
 // Handle inital start
   var start = document.getElementById('memory--settings-reset');
   var handleSettingsSubmission = function (event) {
@@ -28,6 +39,7 @@
       if (cards) {
         document.getElementById('memory--settings-modal').classList.remove('show');
         document.getElementById('memory--end-game-modal').classList.remove('show');
+        document.getElementById('memory--finish-game-modal').classList.remove('show');
         // document.getElementById('memory--end-game-message').innerText = "";
         // document.getElementById('memory--end-game-score').innerText = "";
         buildLayout($.cards, $.settings.rows, $.settings.columns);
@@ -36,6 +48,8 @@
       startTimer(120)
 
     };
+    reset.addEventListener('click', handleSettingsSubmission);
+    reset = document.getElementById('retry2');
     reset.addEventListener('click', handleSettingsSubmission);
 
   // Handle clicking on card
@@ -60,14 +74,15 @@
     else if (status.code == 4) {
       var score = parseInt((($.attempts - $.mistakes) / $.attempts) * 100, 10);
       var message = getEndGameMessage(score);
-      clearInterval(intervalID);document.getElementById('output').innerHTML="Congratulations!<br>All the documents look correct, You can move forward :)";
+      clearInterval(intervalID);
+      //document.getElementById('output').innerHTML="Congratulations!<br>All the documents look correct, You can move forward :)";
       
 
       // document.getElementById('memory--end-game-message').textContent = message;
       // document.getElementById('memory--end-game-score').textContent =
       //     'Score: ' + score + ' / 100';
 
-      //document.getElementById("memory--end-game-modal").classList.toggle('show');
+      document.getElementById("memory--finish-game-modal").classList.toggle('show');
     }
 
   };

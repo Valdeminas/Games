@@ -216,11 +216,11 @@ body {
   cursor: pointer;
 }
 
-#retry {
+#retry,#retry2 {
   cursor: pointer;
 }
 
-#end {
+#end,#end2 {
   cursor: pointer;
 }
 

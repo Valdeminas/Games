@@ -1,0 +1,46 @@
+#main--image{
+	height:100%;
+	width:auto;
+	margin:auto;
+	display:block;
+	background-color:#d7e9f1;
+	z-index:-1;
+}
+
+#main--div{
+	height:100%;
+	width:auto;
+	margin:auto;
+	display:block;
+	background-color:#d7e9f1;
+}
+
+#post--1{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 33%;
+}
+
+#main--c{
+	height:100%;
+	width:auto;
+	margin:auto;
+	display:block;
+	background-image:url('../images/Main.png');
+	background-size:100% 100%;
+	background-color: #d7e9f1;
+}
+
+html{
+	height:100%;
+	width:100%;
+	
+}
+
+body{
+	height:100%;
+	width:100%;
+	background-color: #0061a8;
+}

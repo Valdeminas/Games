@@ -93,6 +93,19 @@ body {
   float: right;
 }
 
+#memory--finish-game-modal{
+  background-color: rgba(0, 0, 0, .86);
+
+  text-align: center;
+  color:#ccc;
+  padding:8px 0;
+}
+#memory--finish-game-modal h2,
+#memory--finish-game-modal h3 {
+  margin:0;
+  margin-bottom: 4px;
+}
+
 #memory--end-game-modal{
   background-color: rgba(0, 0, 0, .86);
 
@@ -188,11 +201,11 @@ body {
   cursor: pointer;
 }
 
-#retry {
+#retry,#retry2 {
   cursor: pointer;
 }
 
-#end {
+#end,#end2 {
   cursor: pointer;
 }
 
