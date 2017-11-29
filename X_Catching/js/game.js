@@ -27,7 +27,7 @@ function create_game() {
     var c, ctx;
     var isGameOver = true;
 
-    var apple_names = ["Date", "Amount", "Account", "Signature", "Name", "Adress", "Personal ID"];
+    var apple_names = ["Date", "Amount", "Account", "Signature", "Name", "Address", "Personal ID"];
     var scoreLine = [];
 
     var apples = [];
